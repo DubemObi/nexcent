@@ -10,15 +10,15 @@ import logo from "../img/logo-icon.png";
 
 function Footer() {
   return (
-    <div className="px-36 py-16 bg-black text-white flex justify-between">
+    <div className="px-36 py-16  bg-black text-white flex justify-between">
       <div className="">
-        <div className="flex gap-2 items-center mb-6">
+        <div className="flex gap-2 items-center mb-8">
           <img src={logo} alt="" className="w-[2.7rem] h-[1.8rem]" />
           <h1 className="text-4xl font-semibold">Nexcent</h1>
         </div>
         <p className="text-sm">Copyright © 2020 Nexcent ltd.</p>
         <p className="text-sm ">All rights reserved</p>
-        <div className="mt-6 space-x-4 flex items-center">
+        <div className="mt-8 space-x-4 flex items-center">
           <FontAwesomeIcon
             icon={faInstagram}
             className="bg-dark-grey p-1 rounded-lg "
@@ -60,7 +60,7 @@ function Footer() {
             <input
               type="text"
               placeholder="Your email address"
-              className="bg-grey p-2 w-[15rem] rounded-md"
+              className="bg-grey p-2 w-[15rem] rounded-md border-2 border-silver"
             />
             <FontAwesomeIcon
               icon={faPaperPlane}

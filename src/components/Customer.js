@@ -10,9 +10,9 @@ import image from "../img/image 9.png";
 
 function Customer() {
   return (
-    <div className="px-36 py-8 flex  gap-16 bg-silver">
-      <img src={image} alt="" className="w-[20.3rem] " />
-      <div className="w-[50%]">
+    <div className="px-10 lg:px-36 py-8 flex flex-col lg:flex-row items-center lg:gap-16 bg-silver">
+      <img src={image} alt="" className="w-[16rem] lg:w-[20.3rem] " />
+      <div className="lg:w-[50%] text-center lg:text-left">
         <p className="text-sm text-grey mb-4 pt-2">
           Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
           sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
@@ -27,14 +27,14 @@ function Customer() {
         </p>
         <p className="text-green text-xl font-semibold">Tim Smith</p>
         <p className="text-base">British Dragon Boat Racing Association</p>
-        <div className="flex items-center pt-8 gap-16">
+        <div className="flex flex-col lg:flex-row items-center pt-8 gap-8 lg:gap-16">
           <div className="flex space-x-6 ">
-            <img src={Client1} alt="" className="w-10 h-10" />
-            <img src={Client2} alt="" className="w-10 h-10" />
-            <img src={Client3} alt="" className="w-10 h-10" />
-            <img src={Client4} alt="" className="w-10 h-10" />
-            <img src={Client5} alt="" className="w-10 h-10" />
-            <img src={Client6} alt="" className="w-10 h-10" />
+            <img src={Client1} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <img src={Client2} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <img src={Client3} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <img src={Client4} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <img src={Client5} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <img src={Client6} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
           </div>
           <div className="flex min-w-16 gap-4 items-center text-green text-xl ">
             <p className="text-sm font-semibold">Meet all customers </p>

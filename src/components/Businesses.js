@@ -5,9 +5,9 @@ import Icon4 from "../img/Icon (4).png";
 
 function Businesses() {
   return (
-    <div className="px-36 bg-silver flex justify-between py-14">
-      <div className="w-1/2">
-        <h2 className="text-4xl font-semibold w-[63%] mb-2">
+    <div className=" px-10 lg:px-36 bg-silver flex flex-col lg:flex-row justify-between py-12 lg:py-14">
+      <div className="lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
+        <h2 className="text-4xl font-semibold lg:w-[63%] mb-2">
           Helping a local{" "}
           <span className="text-green">business reinvent itself</span>{" "}
         </h2>
@@ -18,33 +18,41 @@ function Businesses() {
       <div className="flex flex-col w-1/2 gap-7">
         <div className="flex items-center gap-7 ">
           <div className="flex gap-4 ">
-            <img src={Icon1} alt="" className="w-12 h-12" />
+            <img src={Icon1} alt="" className=" w-8 h-8 lg:w-12 lg:h-12" />
             <div className="w-36">
-              <h2 className="text-[1.75rem] font-bold leading-8">2,245,341</h2>
-              <p className="text-base">Members</p>
+              <h2 className="text-2xl lg:text-[1.75rem] font-bold lg:leading-8">
+                2,245,341
+              </h2>
+              <p className="text-sm lg:text-base">Members</p>
             </div>
           </div>
           <div className="flex gap-3">
-            <img src={Icon2} alt="" className="w-12 h-12" />
+            <img src={Icon2} alt="" className=" w-8 h-8 lg:w-12 lg:h-12" />
             <div className="w-36">
-              <h2 className="text-[1.75rem] font-bold leading-8">46,328</h2>
-              <p>Clubs</p>
+              <h2 className="text-2xl lg:text-[1.75rem] font-bold lg:leading-8">
+                46,328
+              </h2>
+              <p className="text-sm lg:text-base">Clubs</p>
             </div>
           </div>
         </div>
         <div className="flex items-center gap-7">
           <div className=" flex gap-4">
-            <img src={Icon4} alt="" className="w-12 h-12" />
+            <img src={Icon4} alt="" className=" w-8 h-8 lg:w-12 lg:h-12" />
             <div className="w-36">
-              <h2 className="text-[1.75rem] font-bold leading-8">828,867</h2>
-              <p>Event Bookings</p>
+              <h2 className="text-2xl lg:text-[1.75rem] font-bold lg:leading-8">
+                828,867
+              </h2>
+              <p className="text-sm lg:text-base">Event Bookings</p>
             </div>
           </div>
           <div className="flex gap-4">
-            <img src={Icon3} alt="" className="w-12 h-12" />
+            <img src={Icon3} alt="" className=" w-8 h-8 lg:w-12 lg:h-12" />
             <div className="w-36">
-              <h2 className="text-[1.75rem] font-bold leading-8">1,926,436</h2>
-              <p>Payments</p>
+              <h2 className="text-2xl lg:text-[1.75rem] font-bold lg:leading-8">
+                1,926,436
+              </h2>
+              <p className="text-sm lg:text-base">Payments</p>
             </div>
           </div>
         </div>

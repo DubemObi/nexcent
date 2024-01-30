@@ -19,7 +19,7 @@ function Marketing() {
       <div className=" flex space-x-6 justify-center mx-auto pb-24">
         <div className="relative flex flex-col items-center">
           <img src={image1} alt="" className="w-[23rem] rounded-md" />
-          <div className="w-[19.8rem] h-[11rem] bg-silver absolute top-48 flex items-center flex-col p-4 rounded-md shadow-md shadow-grey/30 ">
+          <div className="w-[85%] h-[11rem] bg-silver absolute top-48 flex items-center flex-col p-4 rounded-md shadow-md shadow-grey/30 ">
             <p className="text-xl mb-6 h-[60%]">
               Creating Streamlined Safeguarding Processes with OneRen
             </p>
@@ -31,7 +31,7 @@ function Marketing() {
         </div>
         <div className="relative flex flex-col items-center">
           <img src={image2} alt="" className="w-[23rem] rounded-md" />
-          <div className="w-[19.8rem] h-[11rem] bg-silver absolute top-48 flex items-center flex-col p-4 rounded-md shadow-md shadow-grey/30 ">
+          <div className="w-[85%] h-[11rem] bg-silver absolute top-48 flex items-center flex-col p-4 rounded-md shadow-md shadow-grey/30 ">
             <p className="text-xl mb-6 h-[60%]">
               What are your safeguarding responsibilities and how can you manage
               them?
@@ -44,7 +44,7 @@ function Marketing() {
         </div>
         <div className="relative flex flex-col items-center">
           <img src={image3} alt="" className="w-[23rem] rounded-md" />
-          <div className="w-[19.8rem] h-[11rem] bg-silver absolute top-48 flex items-center flex-col py-4 px-7 rounded-md shadow-md shadow-grey/30 ">
+          <div className="w-[85%] h-[11rem] bg-silver absolute top-48 flex items-center flex-col py-4 px-7 rounded-md shadow-md shadow-grey/30 ">
             <p className="text-xl mb-6 h-[60%]">
               Revamping the Membership Model with Triathlon Australia
             </p>
