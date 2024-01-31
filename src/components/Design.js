@@ -2,11 +2,15 @@ import image from "../img/pana.png";
 
 function Design() {
   return (
-    <div className="px-10 lg:px-36 py-10 flex flex-col lg:flex-row items-center gap-8">
-      <div className="lg:w-[27.59rem]">
-        <img src={image} alt="" className="w-[17rem] lg:w-[23rem]" />
+    <div className="px-10 md:px-24 lg:px-36 py-10 flex flex-col md:flex-row lg:flex-row items-center gap-8">
+      <div className="md:w-[20rem] lg:w-[27.59rem]">
+        <img
+          src={image}
+          alt=""
+          className="w-[17rem] md:w-[18rem] lg:w-[23rem]"
+        />
       </div>
-      <div className="lg:w-[50%] text-center lg:text-left">
+      <div className="lg:w-[50%] md:w-[50%] text-center md:text-left lg:text-left">
         <h2 className="text-4xl font-semibold mb-4">
           How to design your site footer like we did
         </h2>

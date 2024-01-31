@@ -10,9 +10,13 @@ import image from "../img/image 9.png";
 
 function Customer() {
   return (
-    <div className="px-10 lg:px-36 py-8 flex flex-col lg:flex-row items-center lg:gap-16 bg-silver">
-      <img src={image} alt="" className="w-[16rem] lg:w-[20.3rem] " />
-      <div className="lg:w-[50%] text-center lg:text-left">
+    <div className="px-10 md:px-24 lg:px-36 py-8 flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:gap-16 md:gap-12 bg-silver">
+      <img
+        src={image}
+        alt=""
+        className="w-[16rem] md:w-[17rem] lg:w-[20.3rem] "
+      />
+      <div className="lg:w-[50%]   text-center md:text-left lg:text-left">
         <p className="text-sm text-grey mb-4 pt-2">
           Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
           sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
@@ -27,7 +31,7 @@ function Customer() {
         </p>
         <p className="text-green text-xl font-semibold">Tim Smith</p>
         <p className="text-base">British Dragon Boat Racing Association</p>
-        <div className="flex flex-col lg:flex-row items-center pt-8 gap-8 lg:gap-16">
+        <div className="flex flex-col md:flex-row lg:flex-row items-center pt-8 gap-8 md:gap-16 lg:gap-16">
           <div className="flex space-x-6 ">
             <img src={Client1} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />
             <img src={Client2} alt="" className="w-8 h-8 lg:w-10 lg:h-10" />

@@ -3,8 +3,8 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Menu({ onSet }) {
   return (
-    <div className="fixed top-0 z-20 bg-grey/50 h-full w-full ">
-      <div className="bg-green h-dvh w-2/5 absolute right-0 px-4 py-6">
+    <div className="fixed top-0 z-20 h-full w-full ">
+      <div className="bg-green h-dvh w-2/5 z-10 absolute right-0 px-4 py-6">
         <div className="flex justify-end">
           <FontAwesomeIcon
             icon={faXmark}
@@ -29,6 +29,10 @@ function Menu({ onSet }) {
           </button>
         </div>
       </div>
+      <div
+        className="fixed top-0 bg-grey/50 h-full w-full"
+        onClick={onSet}
+      ></div>
     </div>
   );
 }

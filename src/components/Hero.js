@@ -2,10 +2,10 @@ import illustration from "../img/Illustration.png";
 
 function Hero() {
   return (
-    <div className="flex flex-col mt-[84px] items-center px-10 py-10 lg:px-36 lg:pt-24 pb-8 bg-silver text-dark-grey">
-      <div className="flex flex-col-reverse items-center mb-16 lg:flex-row lg:flex lg:justify-between lg:items-center lg:space-x-24 lg:mb-16">
-        <div className="text-center lg:text-left space-y-6 ">
-          <h1 className="text-5xl lg:text-[4rem] font-semibold lg:leading-[4rem]">
+    <div className="flex flex-col mt-[84px] items-center px-10 py-10 lg:px-36 md:px-24 md:pt-24  lg:pt-24 pb-8 bg-silver text-dark-grey">
+      <div className="flex flex-col-reverse items-center mb-16 lg:flex-row lg:flex lg:justify-between lg:items-center lg:space-x-24 lg:mb-16 md:flex-row md:flex md:justify-between md:items-center md:space-x-24 md:mb-16">
+        <div className="text-center lg:text-left md:text-left space-y-6 ">
+          <h1 className="text-5xl lg:text-[4rem] md:text-6xl font-semibold lg:leading-[4rem]">
             Lessons and insights{" "}
             <span className="text-green">from 8 years</span>
           </h1>

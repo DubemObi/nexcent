@@ -12,14 +12,14 @@ function Clients() {
       <p className="text-grey">
         We have been working with some Fortune 500+ clients
       </p>
-      <div className="flex space-x-6 lg:space-x-36 pt-10 justify-center ">
-        <img src={Client1} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client2} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client3} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client4} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client5} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client6} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
-        <img src={Client1} alt="" className="w-7 h-7 lg:w-10 lg:h-10" />
+      <div className="flex space-x-6 lg:space-x-36 md:space-x-28 pt-10 justify-center ">
+        <img src={Client1} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client2} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client3} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client4} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client5} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client6} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
+        <img src={Client1} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />
       </div>
     </div>
   );

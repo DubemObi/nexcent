@@ -5,8 +5,8 @@ import Icon4 from "../img/Icon (4).png";
 
 function Businesses() {
   return (
-    <div className=" px-10 lg:px-36 bg-silver flex flex-col lg:flex-row justify-between py-12 lg:py-14">
-      <div className="lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
+    <div className=" px-10 md:px-24 lg:px-36 bg-silver flex flex-col md:flex-row lg:flex-row justify-between py-12 lg:py-14">
+      <div className="lg:w-1/2 md:w-1/2 mb-12 lg:mb-0 md:mb-0 text-center md:text-left lg:text-left">
         <h2 className="text-4xl font-semibold lg:w-[63%] mb-2">
           Helping a local{" "}
           <span className="text-green">business reinvent itself</span>{" "}
@@ -15,7 +15,7 @@ function Businesses() {
           We reached here with our hard work and dedication
         </p>
       </div>
-      <div className="flex flex-col w-1/2 gap-7">
+      <div className="flex flex-col items-center lg:items-start md:w-1/2 lg:w-1/2 gap-7">
         <div className="flex items-center gap-7 ">
           <div className="flex gap-4 ">
             <img src={Icon1} alt="" className=" w-8 h-8 lg:w-12 lg:h-12" />
