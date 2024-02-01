@@ -7,7 +7,7 @@ function Design() {
       <div className="md:w-[20rem] lg:w-[27.59rem]">
         <motion.img
           whileInView={{ x: [-50, 0] }}
-          transition={{ ease: "easeIn", duration: 1 }}
+          transition={{ ease: "easeIn", duration: 0.8 }}
           src={image}
           alt=""
           className="w-[17rem] md:w-[18rem] lg:w-[23rem]"
@@ -15,7 +15,7 @@ function Design() {
       </div>
       <motion.div
         whileInView={{ x: [80, 0] }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.8 }}
         className="lg:w-[50%] md:w-[50%] text-center md:text-left lg:text-left"
       >
         <h2 className="text-4xl font-semibold mb-4">

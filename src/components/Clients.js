@@ -11,7 +11,7 @@ function Clients() {
     <div className=" px-10 py-8 lg:py-10 lg:px-36 text-center">
       <motion.h2
         whileInView={{ x: [-80, 0] }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.8 }}
         className="text-[2.25rem] font-semibold"
       >
         Our Clients
@@ -21,7 +21,7 @@ function Clients() {
       </p>
       <motion.div
         whileInView={{ x: [80, 0] }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.8 }}
         className="flex space-x-6 lg:space-x-36 md:space-x-28 pt-10 justify-center "
       >
         <img src={Client1} alt="" className="w-7 h-7 lg:w-10  md:w-8 md:h-8 " />

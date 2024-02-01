@@ -6,12 +6,12 @@ import Icon4 from "../img/Icon (4).png";
 
 function Businesses() {
   return (
-    <div className=" px-10 md:px-24 lg:px-36 bg-silver flex flex-col md:flex-row lg:flex-row justify-between py-12 lg:py-14">
+    <div id="businesses" className=" px-10 md:px-24 lg:px-36 bg-silver flex flex-col md:flex-row lg:flex-row justify-between py-12 lg:py-14">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
         transition={{
-          duration: 1,
+          duration: 0.8,
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
@@ -27,7 +27,7 @@ function Businesses() {
       </motion.div>
       <motion.div
         whileInView={{ x: [80, 0] }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.8 }}
         className="flex flex-col items-center lg:items-start md:w-1/2 lg:w-1/2 gap-7"
       >
         <div className="flex items-center gap-7 ">

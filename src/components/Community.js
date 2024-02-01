@@ -8,7 +8,8 @@ function Community() {
     <>
       <motion.div
         whileInView={{ x: [-80, 0] }}
-        transition={{ ease: "easeIn", duration: 1 }}
+              transition={{ ease: "easeIn", duration: 0.8 }}
+              id="community"
         className=" mx-auto w-[80%] lg:w-[35%] md:w-[50%] leading-10 pt-4"
       >
         <h2 className="text-[2.25rem] font-semibold text-center">

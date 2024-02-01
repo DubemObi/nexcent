@@ -34,12 +34,24 @@ function Navbar() {
         />
 
         <ul className="flex space-x-12 md:space-x-8">
-          <li>Home</li>
-          <li>Service</li>
-          <li>Feature</li>
-          <li>Product</li>
-          <li>Testimonial</li>
-          <li>FAQ</li>
+          <a href="">
+            <li>Home</li>
+          </a>
+          <a href="#community">
+            <li>Service</li>
+          </a>
+          <a href="#businesses">
+            <li>Feature</li>
+          </a>
+          <a href="#marketing">
+            <li>Product</li>
+          </a>
+          <a href="#customer">
+            <li>Testimonial</li>
+          </a>
+          <a href="">
+            <li>FAQ</li>
+          </a>
         </ul>
 
         <div className="flex space-x-4 items-center">

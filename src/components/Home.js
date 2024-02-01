@@ -14,7 +14,7 @@ function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div className="text-dark-grey">
+    <div className="text-dark-grey scroll-smooth">
       <motion.div
         className="h-2 fixed top-0 left-0 right-0 z-10 bg-green origin-left "
         style={{ scaleX: scrollYProgress }}

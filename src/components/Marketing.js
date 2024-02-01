@@ -7,7 +7,7 @@ import image3 from "../img/image 20.png";
 
 function Marketing() {
   return (
-    <div className="px-10 md:px-24 lg:px-36 py-12 text-center">
+    <div id="marketing" className="px-10 md:px-24 lg:px-36 py-12 text-center">
       <motion.div
         whileInView={{ x: [-70, 0] }}
         transition={{ duration: 1 }}
