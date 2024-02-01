@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import image1 from "../img/image 18.png";
@@ -7,7 +8,11 @@ import image3 from "../img/image 20.png";
 function Marketing() {
   return (
     <div className="px-10 md:px-24 lg:px-36 py-12 text-center">
-      <div className="lg:w-1/2 md:w-2/3 lg:m-auto md:m-auto space-y-2 pb-8 md:pb-4 lg:pb-4">
+      <motion.div
+        whileInView={{ x: [-70, 0] }}
+        transition={{ duration: 1 }}
+        className="lg:w-1/2 md:w-2/3 lg:m-auto md:m-auto space-y-2 pb-8 md:pb-4 lg:pb-4"
+      >
         <h2 className="text-4xl font-semibold ">Caring is the new marketing</h2>
         <p className="text-base ">
           The Nexcent blog is the best place to read about the latest membership
@@ -15,9 +20,18 @@ function Marketing() {
           how our community are increasing their membership income and lot's
           more.​
         </p>
-      </div>
+      </motion.div>
       <div className=" lg:flex md:flex md:space-y-0 md:space-x-6 space-y-8 lg:space-y-0 lg:space-x-6 lg:justify-center md:justify-center mx-auto lg:pb-24">
-        <div className="lg:relative md:relative flex flex-col items-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="lg:relative md:relative flex flex-col items-center"
+        >
           <img
             src={image1}
             alt=""
@@ -32,8 +46,17 @@ function Marketing() {
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-        </div>
-        <div className="lg:relative flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          transition={{
+            duration: 1,
+            delay: 0.8,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="lg:relative flex flex-col items-center"
+        >
           <img
             src={image2}
             alt=""
@@ -49,8 +72,17 @@ function Marketing() {
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-        </div>
-        <div className="lg:relative flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          transition={{
+            duration: 1,
+            delay: 1,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="lg:relative flex flex-col items-center"
+        >
           <img
             src={image3}
             alt=""
@@ -65,7 +97,7 @@ function Marketing() {
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

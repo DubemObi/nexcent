@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import icon1 from "../img/Icon (1).svg";
 import icon2 from "../img/Icon.png";
 import icon3 from "../img/Icon.svg";
@@ -5,14 +6,27 @@ import icon3 from "../img/Icon.svg";
 function Community() {
   return (
     <>
-      <div className=" mx-auto w-[80%] lg:w-[35%] md:w-[50%] leading-10 pt-4">
+      <motion.div
+        whileInView={{ x: [-80, 0] }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        className=" mx-auto w-[80%] lg:w-[35%] md:w-[50%] leading-10 pt-4"
+      >
         <h2 className="text-[2.25rem] font-semibold text-center">
           Manage your entire community in a single system
         </h2>
         <p className="text-center text-grey">Who is Nexcent suitable for?</p>
-      </div>
+      </motion.div>
       <div className="px-10 lg:px-36 md:px-24 pt-6 pb-8 flex flex-col space-y-4 md:space-y-0 lg:space-y-0 md:space-x-3 items-center lg:flex-row lg:flex lg:justify-between md:flex-row md:flex md:justify-between">
-        <div className="flex justify-center flex-col w-[18.68rem]  h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="flex justify-center flex-col w-[18.68rem]  h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8"
+        >
           <img
             src={icon2}
             alt=""
@@ -26,8 +40,17 @@ function Community() {
             Our membership management software provides full automation of
             membership renewals and payments
           </p>
-        </div>
-        <div className="flex justify-center flex-col w-[18.68rem] h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.8,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="flex justify-center flex-col w-[18.68rem] h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8"
+        >
           <img
             src={icon3}
             alt=""
@@ -41,8 +64,17 @@ function Community() {
             Our membership management software provides full automation of
             membership renewals and payments
           </p>
-        </div>
-        <div className="flex justify-center flex-col w-[18.68rem] h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 1,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="flex justify-center flex-col w-[18.68rem] h-[16.25rem]  relative text-center py-6 rounded-lg shadow-md shadow-grey/30 px-8"
+        >
           <img
             src={icon1}
             alt=""
@@ -56,7 +88,7 @@ function Community() {
             Our membership management software provides full automation of
             membership renewals and payments
           </p>
-        </div>
+        </motion.div>
       </div>
     </>
   );

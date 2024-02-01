@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Client1 from "../img/Logo (1).png";
@@ -11,12 +12,18 @@ import image from "../img/image 9.png";
 function Customer() {
   return (
     <div className="px-10 md:px-24 lg:px-36 py-8 flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:gap-16 md:gap-12 bg-silver">
-      <img
+      <motion.img
+        whileInView={{ x: [-50, 0] }}
+        transition={{ ease: "easeIn", duration: 1 }}
         src={image}
         alt=""
         className="w-[16rem] md:w-[17rem] lg:w-[20.3rem] "
       />
-      <div className="lg:w-[50%]   text-center md:text-left lg:text-left">
+      <motion.div
+        whileInView={{ x: [80, 0] }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        className="lg:w-[50%]   text-center md:text-left lg:text-left"
+      >
         <p className="text-sm text-grey mb-4 pt-2">
           Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
           sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
@@ -45,7 +52,7 @@ function Customer() {
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
