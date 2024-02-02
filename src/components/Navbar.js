@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       {isOpen && <Menu onSet={handleIsOpen} />}
-      <nav className="flex px-5 py-2 justify-between h-[84px] items-center bg-silver fixed top-0 w-full z-10">
+      <nav className="flex px-5 py-2 justify-between h-[84px] items-center bg-silver fixed top-0 w-dvw z-10">
         <div className="flex gap-2 items-center">
           <img src={Logo} alt="" className="w-[2.7rem] h-[1.8rem]" />
           <h1 className="text-3xl font-bold">Nexcent</h1>

@@ -10,6 +10,7 @@ function Marketing() {
     <div id="marketing" className="px-10 md:px-24 lg:px-36 py-12 text-center">
       <motion.div
         whileInView={{ x: [-70, 0] }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
         className="lg:w-1/2 md:w-2/3 lg:m-auto md:m-auto space-y-2 pb-8 md:pb-4 lg:pb-4"
       >
@@ -25,6 +26,7 @@ function Marketing() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 0.5,
@@ -50,6 +52,7 @@ function Marketing() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 0.8,
@@ -76,6 +79,7 @@ function Marketing() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1, y: [50, 0] }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 1,

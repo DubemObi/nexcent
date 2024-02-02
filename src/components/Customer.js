@@ -11,9 +11,13 @@ import image from "../img/image 9.png";
 
 function Customer() {
   return (
-    <div id="customer" className="px-10 md:px-24 lg:px-36 py-8 flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:gap-16 md:gap-12 bg-silver">
+    <div
+      id="customer"
+      className="px-10 md:px-24 lg:px-36 py-8 flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:gap-16 md:gap-12 bg-silver"
+    >
       <motion.img
         whileInView={{ x: [-50, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         src={image}
         alt=""
@@ -21,6 +25,7 @@ function Customer() {
       />
       <motion.div
         whileInView={{ x: [80, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         className="lg:w-[50%]   text-center md:text-left lg:text-left"
       >

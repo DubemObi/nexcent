@@ -7,6 +7,7 @@ function Design() {
       <div className="md:w-[20rem] lg:w-[27.59rem]">
         <motion.img
           whileInView={{ x: [-50, 0] }}
+          viewport={{ once: true }}
           transition={{ ease: "easeIn", duration: 0.8 }}
           src={image}
           alt=""
@@ -15,6 +16,7 @@ function Design() {
       </div>
       <motion.div
         whileInView={{ x: [80, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         className="lg:w-[50%] md:w-[50%] text-center md:text-left lg:text-left"
       >

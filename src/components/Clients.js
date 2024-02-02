@@ -12,6 +12,7 @@ function Clients() {
       <motion.h2
         whileInView={{ x: [-80, 0] }}
         transition={{ ease: "easeIn", duration: 0.8 }}
+        viewport={{ once: true }}
         className="text-[2.25rem] font-semibold"
       >
         Our Clients
@@ -21,6 +22,7 @@ function Clients() {
       </p>
       <motion.div
         whileInView={{ x: [80, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         className="flex space-x-6 lg:space-x-36 md:space-x-28 pt-10 justify-center "
       >

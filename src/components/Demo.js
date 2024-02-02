@@ -9,6 +9,7 @@ function Demo() {
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
             delay: 0.5,

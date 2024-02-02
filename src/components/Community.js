@@ -5,11 +5,12 @@ import icon3 from "../img/Icon.svg";
 
 function Community() {
   return (
-    <>
+    <div>
       <motion.div
         whileInView={{ x: [-80, 0] }}
-              transition={{ ease: "easeIn", duration: 0.8 }}
-              id="community"
+        viewport={{ once: true }}
+        transition={{ ease: "easeIn", duration: 0.8 }}
+        id="community"
         className=" mx-auto w-[80%] lg:w-[35%] md:w-[50%] leading-10 pt-4"
       >
         <h2 className="text-[2.25rem] font-semibold text-center">
@@ -21,6 +22,7 @@ function Community() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.8,
             delay: 0.5,
@@ -45,6 +47,7 @@ function Community() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.8,
             delay: 0.8,
@@ -69,6 +72,7 @@ function Community() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.8,
             delay: 1,
@@ -91,7 +95,7 @@ function Community() {
           </p>
         </motion.div>
       </div>
-    </>
+    </div>
   );
 }
 

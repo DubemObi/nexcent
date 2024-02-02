@@ -7,6 +7,7 @@ function Hero() {
       <div className="flex flex-col-reverse items-center mb-16 lg:flex-row lg:flex lg:justify-between lg:items-center lg:space-x-24 lg:mb-16 md:flex-row md:flex md:justify-between md:items-center md:space-x-24 md:mb-16">
         <motion.div
           whileInView={{ x: [-100, 0] }}
+          viewport={{ once: true }}
           transition={{ type: "spring", ease: "easeIn", duration: 3 }}
           className="text-center lg:text-left md:text-left space-y-6 "
         >
@@ -32,6 +33,7 @@ function Hero() {
           alt=""
           className="mb-12 lg:mb-0 w-52 lg:w-[24.4rem] "
           whileInView={{ y: [150, 0] }}
+          viewport={{ once: true }}
           transition={{ type: "spring", ease: "easeIn", duration: 3 }}
         />
       </div>

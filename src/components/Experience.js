@@ -6,6 +6,7 @@ function Experience() {
     <div className="px-10 lg:px-36 md:px-24 mb-8 md:mb-0 lg:mb-0 flex items-center flex-col md:flex-row lg:flex-row gap-8">
       <motion.img
         whileInView={{ x: [-50, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         src={Frame35}
         alt=""
@@ -13,6 +14,7 @@ function Experience() {
       />
       <motion.div
         whileInView={{ x: [70, 0] }}
+        viewport={{ once: true }}
         transition={{ ease: "easeIn", duration: 0.8 }}
         className="text-center md:text-left md:w-[50%] lg:text-left lg:w-[50%] space-y-4"
       >
